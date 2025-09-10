@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>🏡 Main</title>
+<title>🚀 Материалы</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,20 +72,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-team .list');
+    const listingTargetEl = window.document.querySelector('#listing-materials .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-name','listing-role','listing-image',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-number','listing-materials','listing-notes','listing-seminar',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-name","listing-role","listing-image"],
+      searchColumns: ["listing-title","listing-number","listing-materials","listing-notes","listing-seminar"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-team'] = new List('listing-team', options);
+    window['quarto-listings']['listing-materials'] = new List('listing-materials', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -129,13 +129,9 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="🏡 Main">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://glkarpov.github.io/ptms_bi_hse_25/photos/dm.jpeg">
-<meta name="twitter:title" content="🏡 Main">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://glkarpov.github.io/ptms_bi_hse_25/photos/dm.jpeg">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="🚀 Материалы">
+<meta name="twitter:title" content="🚀 Материалы">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -151,7 +147,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./program.html"> 
+    <a class="nav-link active" href="./program.html" aria-current="page"> 
 <span class="menu-text">🚀 Материалы</span></a>
   </li>  
 </ul>
@@ -171,7 +167,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">🏡 Main</h1>
+<h1 class="title">🚀 Материалы</h1>
 </div>
 
 
@@ -188,97 +184,31 @@ window.Quarto = {
 </header>
 
 
-<section id="теория-вероятностей-и-математическая-статистика" class="level1">
-<h1>Теория вероятностей и математическая статистика</h1>
-</section>
-<section id="team" class="level1">
-<h1>Team</h1>
-<div id="listing-team" class="quarto-listing quarto-listing-container-custom">
-<div id="listing-team" class="quarto-listing quarto-listing-container-grid">
-    <div class="list grid quarto-listing-cols-4">
+<div id="listing-materials" class="quarto-listing quarto-listing-container-custom">
+
+    <h3 class="anchored">Занятие 1</h3>
+    <p>
+        <a href="./lectures/1.pdf">📄 Презентация</a> • <a href="./notes/1.pdf">📝 Заметки</a> • <a href="./seminars/1.pdf">👷‍♂️ Seminar</a>
+    </p>
+    <p>
         
-            <div class="g-col-1">
-                <div class="quarto-grid-item card h-100 card-left borderless">
-                  <p class="card-img-top">
-                    <img src="photos/dm.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-                  </p>
-                  <div class="card-body post-contents">
-                    <h5 class="no-anchor card-title listing-title" data-anchor-id="team">
-                      Даниил Меркулов
-                    </h5>
-                    <p>Лектор для бакалавров</p>
-                  </div>
-                </div>
-              </div>
+    </p>
+    <p>Вероятностное пространство. Классическая, комбинаторная, геометрическая вероятность.</p>
+
+    <h3 class="anchored">Занятие 2</h3>
+    <p>
+        <a href="./lectures/2.pdf">📄 Презентация</a> • <a href="./notes/2.pdf">📝 Заметки</a> • <a href="./seminars/2.pdf">👷‍♂️ Seminar</a>
+    </p>
+    <p>
         
-            <div class="g-col-1">
-                <div class="quarto-grid-item card h-100 card-left borderless">
-                  <p class="card-img-top">
-                    <img src="photos/dr.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-                  </p>
-                  <div class="card-body post-contents">
-                    <h5 class="no-anchor card-title listing-title">
-                      Денис Рубцов
-                    </h5>
-                    <p>Семинарист для бакалавров</p>
-                  </div>
-                </div>
-              </div>
-        
-            <div class="g-col-1">
-                <div class="quarto-grid-item card h-100 card-left borderless">
-                  <p class="card-img-top">
-                    <img src="photos/po.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-                  </p>
-                  <div class="card-body post-contents">
-                    <h5 class="no-anchor card-title listing-title">
-                      Петр Остроухов
-                    </h5>
-                    <p>Лектор и семинарист для магистров</p>
-                  </div>
-                </div>
-              </div>
-        
-            <div class="g-col-1">
-                <div class="quarto-grid-item card h-100 card-left borderless">
-                  <p class="card-img-top">
-                    <img src="photos/ms.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-                  </p>
-                  <div class="card-body post-contents">
-                    <h5 class="no-anchor card-title listing-title">
-                      Максим Шуклин
-                    </h5>
-                    <p>Ассистент</p>
-                  </div>
-                </div>
-              </div>
-        
-            <div class="g-col-1">
-                <div class="quarto-grid-item card h-100 card-left borderless">
-                  <p class="card-img-top">
-                    <img src="photos/ap.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-                  </p>
-                  <div class="card-body post-contents">
-                    <h5 class="no-anchor card-title listing-title">
-                      Анна Петрова
-                    </h5>
-                    <p>Ассистент</p>
-                  </div>
-                </div>
-              </div>
-        
-    </div>
-</div>
+    </p>
+    <p>Условная и полная вероятность. Независимость событий. Теорема Байеса.</p>
+
 <div class="listing-no-matching d-none">Нет подходящих элементов</div>
 </div>
-</section>
-<section id="экзамен" class="level1">
-<h1>Экзамен</h1>
-<p><a href="">📜 Список формулировок и теорем</a></p>
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -685,4 +615,4 @@ window.Quarto = {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/glkarpov/ptms_bi_hse_25/edit/main/index.md" class="toc-action"><i class="bi bi-github"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/glkarpov/ptms_bi_hse_25/edit/main/program.md" class="toc-action"><i class="bi bi-github"></i>Редактировать страницу</a></li></ul></div></div></div></footer></body></html>
